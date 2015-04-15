@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/lMessagesRootLayout"
+    tools:context="com.vineet.infoshare.ShowMessages">
+
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:id="@+id/lvMessages"
+        android:layout_above="@+id/lBottomSend"
+        android:layout_alignParentTop="true"
+        android:dividerHeight="10dp"
+        android:divider="#00ffffff"
+         />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lBottomSend"
+        android:layout_alignParentBottom="true"
+        android:background="#ffff"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etSendMessage"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/bSendMessage"
+            android:layout_toStartOf="@id/bSendMessage"
+            android:layout_centerVertical="true"
+        />
+
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bSendMessage"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_action_send_now"
+             />
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

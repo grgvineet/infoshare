@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vineet.infoshare.Categories">
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:id="@+id/lvList"
+      />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="SHow messages"
+        android:id="@+id/button2" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Show messages temp"
+        android:id="@+id/button" />
+</LinearLayout>
